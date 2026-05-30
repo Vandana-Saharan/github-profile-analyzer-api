@@ -84,10 +84,12 @@ const analyzeProfile = async (req, res) => {
     }
 
     res.status(500).json({
-      success: false,
-      message: "Failed to analyze GitHub profile",
-      error: error.message,
-    });
+  success: false,
+  message: "Failed to analyze GitHub profile",
+  error: error.message,
+  githubError: error.response?.data || null,
+  statusCode: error.response?.status || null,
+});
   }
 };
 const getAllProfiles = async (req, res) => {
