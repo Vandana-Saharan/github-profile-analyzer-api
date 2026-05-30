@@ -45,6 +45,7 @@ The API stores the following GitHub profile details:
 - Followers count
 - Following count
 - GitHub profile URL
+
 - Avatar URL
 - GitHub account creation date
 - Analysis timestamp
@@ -79,3 +80,36 @@ github-profile-analyzer-api/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+
+## Live API URL
+
+Base URL:
+
+```txt
+https://github-profile-analyzer-api-uncf.onrender.com
+
+## Live API Endpoints
+
+### 1. Health Check
+
+GET https://github-profile-analyzer-api-uncf.onrender.com/
+
+### 2. Analyze GitHub Profile
+
+POST https://github-profile-analyzer-api-uncf.onrender.com/api/profiles/analyze
+
+Request Body:
+
+```json
+{
+  "username": "octocat"
+}
+
+3. get all the profiles saved in db
+   https://github-profile-analyzer-api-uncf.onrender.com/api/profiles/
+
+
+4. get data user specific
+
+GET https://github-profile-analyzer-api-uncf.onrender.com/api/profiles/octocat

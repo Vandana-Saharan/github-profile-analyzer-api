@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "85a8a5eb-fb7b-4db0-92b0-f83fafbf6a33",
+    "name": "GitHub Profile Analyzer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52205608",
+    "_collection_link": "https://go.postman.co/collection/52205608-85a8a5eb-fb7b-4db0-92b0-f83fafbf6a33?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"vandana\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://github-profile-analyzer-api-uncf.onrender.com/api/profiles/analyze",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-uncf",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "analyze"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
